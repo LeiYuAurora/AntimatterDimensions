@@ -780,7 +780,7 @@ button:focus {
   height: 100%;
   position: absolute;
   z-index: 999;
-  background: url("/images/loading.png") no-repeat;
+  background: url(".././images/loading.png") no-repeat;
   background-color: black;
   background-position-x: 50%;
   background-position-y: 50%;
@@ -3029,15 +3029,15 @@ br {
 }
 
 .o-achievement--normal {
-  background-image: url("/images/cancer achievements.png");
+  background-image: url(".././images/cancer achievements.png");
 }
 
 .o-achievement--cancer {
-  background-image: url("/images/cancer achievements.png");
+  background-image: url(".././images/cancer achievements.png");
 }
 
 .o-achievement--secret {
-  background-image: url("/images/cancer secret achievements.png");
+  background-image: url(".././images/cancer secret achievements.png");
 }
 
 .o-achievement--unlocked {
@@ -3047,7 +3047,7 @@ br {
 
 .o-achievement--hidden {
   background-color: #555555;
-  background-image: url("/images/achhidden.png");
+  background-image: url(".././images/achhidden.png");
   border-color: black;
 }
 
@@ -6183,7 +6183,7 @@ kbd {
   position: relative;
   -webkit-background-clip: text;
   background-clip: text;
-  background-image: url("/images/noise.png");
+  background-image: url(".././images/noise.png");
   animation: a-effarig-run-button--running-noise 15s infinite alternate;
 
   -webkit-text-fill-color: rgba(255, 0, 0, 50%);
@@ -7950,7 +7950,7 @@ kbd {
   top: -1.5rem;
   left: 1rem;
   background-color: transparent;
-  background-image: url("/images/laitela-icon.svg");
+  background-image: url(".././images/laitela-icon.svg");
   background-position: center;
   background-repeat: repeat-y;
   transform: rotate(90deg);
@@ -8137,7 +8137,7 @@ kbd {
   height: 12rem;
   align-items: center;
   background-color: black;
-  background-image: url("/images/laitela-icon.svg");
+  background-image: url(".././images/laitela-icon.svg");
   background-position: center;
   background-repeat: repeat-y;
   background-size: 4.95rem;
@@ -8150,7 +8150,7 @@ kbd {
 
 .o-laitela-run-button__icon:hover {
   background-color: white;
-  background-image: url("/images/laitela-icon-dark.svg");
+  background-image: url("../..././images/laitela-icon-dark.svg");
 }
 
 .o-laitela-run-button__icon--running {
