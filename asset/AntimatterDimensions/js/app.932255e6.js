@@ -4833,7 +4833,7 @@
             xG = function() { var e = this,
                 t = e.$createElement,
                 i = e._self._c || t; return i("div", { staticClass: "l-old-ui-antimatter-dim-tab" }, [
-                i('div', [e._v("Your antimetter production will gets weaker when you have more than " + e._s(e.format('1e9000000000000000')) + " antimatter")]),
+                i('div', [e._v("Your antimetter production will get weaker when you have more than " + e._s(e.format('1e9000000000000000')) + " antimatter")]),
                 i("AntimatterDimensionsTabHeader"), e._v(" " + e._s(e.multiplierText) + " "), i("TickspeedRow"), i("div", { staticClass: "l-dimensions-container" }, [e._l(8, (function(e) { return i("AntimatterDimensionRow", { key: e, attrs: { tier: e } }) })), i("DimensionBoostRow"), i("AntimatterGalaxyRow")], 2), 
                 
                 e.isQuickResetAvailable ? i("PrimaryButton", { staticClass: "o-primary-btn--quick-reset", on: { click: e.quickReset } }, [e._v(" Perform a Dimension Boost reset "), e.hasDimensionBoosts ? i("span", [e._v(" but lose a Dimension Boost")]) : i("span", [e._v(" for no gain")])]) : e._e(), i("div", { staticClass: "l-flex" }), i("AntimatterDimensionProgressBar", { staticClass: "l-antimatter-dim-tab__progress_bar" })], 1) },
