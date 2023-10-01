@@ -4833,7 +4833,7 @@
             xG = function() { var e = this,
                 t = e.$createElement,
                 i = e._self._c || t; return i("div", { staticClass: "l-old-ui-antimatter-dim-tab" }, [
-                i('div', [e._v("Your antimetter production will get weaker when you have more than " + e._s(e.format('1e9000000000000000')) + " antimatter.")]),
+                i('div', [e._v("Your antimetter production will get weaker if you have more than " + e._s(e.format('1e9000000000000000')) + " antimatter.")]),
                 i("AntimatterDimensionsTabHeader"), e._v(" " + e._s(e.multiplierText) + " "), i("TickspeedRow"), i("div", { staticClass: "l-dimensions-container" }, [e._l(8, (function(e) { return i("AntimatterDimensionRow", { key: e, attrs: { tier: e } }) })), i("DimensionBoostRow"), i("AntimatterGalaxyRow")], 2), 
                 
                 e.isQuickResetAvailable ? i("PrimaryButton", { staticClass: "o-primary-btn--quick-reset", on: { click: e.quickReset } }, [e._v(" Perform a Dimension Boost reset "), e.hasDimensionBoosts ? i("span", [e._v(" but lose a Dimension Boost")]) : i("span", [e._v(" for no gain")])]) : e._e(), i("div", { staticClass: "l-flex" }), i("AntimatterDimensionProgressBar", { staticClass: "l-antimatter-dim-tab__progress_bar" })], 1) },
@@ -4934,7 +4934,7 @@
           var _U = function() { var e = this,
                 t = e.$createElement,
                 i = e._self._c || t; return i("div", { staticClass: "l-antimatter-dim-tab" }, [i("div", { staticClass: "modes-container" }, [
-                i('div', [e._v("Your antimetter production got weaker because you have more than " + e._s(e.format('1e9000000000000000')) + " antimatter.")]),
+                i('div', [e._v("Your antimetter production will get weaker if you have more than " + e._s(e.format('1e9000000000000000')) + " antimatter.")]),
                 i("button", { staticClass: "o-primary-btn l-button-container", on: { click: e.changeBuyMode } }, [e._v(" " + e._s(e.getUntil10Display()) + " ")]), i("PrimaryButton", { directives: [{ name: "show", rawName: "v-show", value: e.isSacrificeUnlocked, expression: "isSacrificeUnlocked" }, { name: "tooltip", rawName: "v-tooltip", value: e.sacrificeTooltip, expression: "sacrificeTooltip" }], staticClass: "o-primary-btn--sacrifice", attrs: { enabled: e.isSacrificeAffordable }, on: { click: e.sacrifice } }, [e.isSacrificeAffordable ? i("span", [e._v("Dimensional Sacrifice (" + e._s(e.formatX(e.sacrificeBoost, 2, 2)) + ")")]) : i("span", [e._v("Dimensional Sacrifice Disabled (" + e._s(e.disabledCondition) + ")")])]), i("button", { staticClass: "o-primary-btn l-button-container", on: { click: e.maxAll } }, [e._v(" Max All (M) ")])], 1), i("span", [e._v(e._s(e.multiplierText))]), i("TickspeedRow"), i("div", { staticClass: "l-dimensions-container" }, e._l(8, (function(e) { return i("AntimatterDimensionRow", { key: e, attrs: { tier: e } }) })), 1), i("div", { staticClass: "resets-container" }, [i("DimensionBoostRow"), e.isQuickResetAvailable ? i("PrimaryButton", { staticClass: "o-primary-btn--quick-reset", attrs: { onclick: "softReset(-1, true, true)" } }, [e._v(" Perform a Dimension Boost reset "), e.hasDimensionBoosts ? i("span", [e._v(" but lose a Dimension Boost")]) : i("span", [e._v(" for no gain")])]) : e._e(), i("AntimatterGalaxyRow")], 1), i("AntimatterDimensionProgressBar")], 1) },
             SU = [],
             DU = function() { var e = this,
