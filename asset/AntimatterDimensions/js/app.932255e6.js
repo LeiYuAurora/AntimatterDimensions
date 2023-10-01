@@ -549,7 +549,7 @@
       { id: 38, name: "I don't believe in Gods", get description() { return "Buy an Antimatter Galaxy without Dimensional Sacrificing.\n        (Your Antimatter Galaxies are reset on Infinity.)" }, checkRequirement: () => player.requirementChecks.infinity.noSacrifice, checkEvent: GAME_EVENT.GALAXY_RESET_BEFORE },
       { id: 41, name: "No DLC required", get description() { return `Buy ${formatInt(16)} Infinity Upgrades.` }, checkRequirement: () => player.infinityUpgrades.size >= 16, checkEvent: [GAME_EVENT.INFINITY_UPGRADE_BOUGHT, GAME_EVENT.REALITY_RESET_AFTER, GAME_EVENT.REALITY_UPGRADE_TEN_BOUGHT], get reward() { return `Unlock two new Infinity Upgrades- ${formatX(2)} IP multiplier and offline IP generation.` } }, 
       { id: 42, name: "Super Sanic", get description() { return `Have antimatter per second exceed your current antimatter above ${format(v.E63)}.` }, checkRequirement: () => Currency.antimatter.exponent >= 63 && Currency.antimatter.productionPerSecond.gt(Currency.antimatter.value), checkEvent: GAME_EVENT.GAME_TICK_AFTER }, 
-      { id: 43, name: "Triad Galaxy", description: `Buy ${formatInt(3)} Antimatter Galaxies.`, checkRequirement: () => player.galaxies >= 3, checkEvent: GAME_EVENT.GAME_TICK_AFTER},
+      { id: 43, name: "Triad Galaxy", description: "Buy ${formatInt(3)} Antimatter Galaxies.", checkRequirement: () => player.galaxies >= 3, checkEvent: GAME_EVENT.GAME_TICK_AFTER},
       { id: 44, name: "Over in 30 Seconds", get description() { return `Have antimatter per second exceed your current antimatter\n      for ${formatInt(30)} consecutive seconds.` }, checkRequirement: () => AchievementTimers.marathon1.check(Currency.antimatter.productionPerSecond.gt(Currency.antimatter.value), 30), checkEvent: GAME_EVENT.GAME_TICK_AFTER }, 
       { id: 45, name: "Faster than a potato", get description() { return `Get more than ${format(v.E29)} ticks per second.` }, checkRequirement: () => Tickspeed.current.exponent <= -26, checkEvent: GAME_EVENT.GAME_TICK_AFTER, get reward() { return `Multiply starting tickspeed by ${formatX(1.05,0,2)}.` }, effect: .95 },
       {id: 46, name: "Multidimensional", get description() { return `Reach ${format(v.E12)} of all Antimatter Dimensions except the 8th.` }, checkRequirement: () => AntimatterDimension(7).amount.exponent >= 12, checkEvent: GAME_EVENT.GAME_TICK_AFTER },
@@ -4833,7 +4833,7 @@
             xG = function() { var e = this,
                 t = e.$createElement,
                 i = e._self._c || t; return i("div", { staticClass: "l-old-ui-antimatter-dim-tab" }, [
-                i('div', [e._v("Your antimetter production will get weaker when you have more than " + e._s(e.format('1e9000000000000000')) + " antimatter.")]),
+                i('div', [e._v("Your antimetter production will get weaker when you have more than " + e._s(e.format('1e9000000000000000')) + " antimatter")]),
                 i("AntimatterDimensionsTabHeader"), e._v(" " + e._s(e.multiplierText) + " "), i("TickspeedRow"), i("div", { staticClass: "l-dimensions-container" }, [e._l(8, (function(e) { return i("AntimatterDimensionRow", { key: e, attrs: { tier: e } }) })), i("DimensionBoostRow"), i("AntimatterGalaxyRow")], 2), 
                 
                 e.isQuickResetAvailable ? i("PrimaryButton", { staticClass: "o-primary-btn--quick-reset", on: { click: e.quickReset } }, [e._v(" Perform a Dimension Boost reset "), e.hasDimensionBoosts ? i("span", [e._v(" but lose a Dimension Boost")]) : i("span", [e._v(" for no gain")])]) : e._e(), i("div", { staticClass: "l-flex" }), i("AntimatterDimensionProgressBar", { staticClass: "l-antimatter-dim-tab__progress_bar" })], 1) },
@@ -8357,7 +8357,7 @@
 
           function Q9() { return m9.test(navigator.userAgent) }
 
-          function J9() { console.log("🌌 Antimatter Dimensions: Reality Update 🌌"),y && console.log("👨‍💻 Development Mode 👩‍💻"), pl.initialize(), nc.initialize(), Bu.init(), GameStorage.load(), Tabs.all.find((e => e.config.id === player.options.lastOpenTab)).show(!0), ZA.init() }
+          function J9() { console.log("🌌 Antimatter Dimensions: Reality Update 🌌"),y && console.log("👨‍💻 Development Mode 👩‍💻[2023-10-01 18:43]"), pl.initialize(), nc.initialize(), Bu.init(), GameStorage.load(), Tabs.all.find((e => e.config.id === player.options.lastOpenTab)).show(!0), ZA.init() }
           let e6;
 
           function t6(e) { if (requestAnimationFrame(t6), void 0 === e || void 0 === e6) return void(e6 = e); let t = e - e6;
