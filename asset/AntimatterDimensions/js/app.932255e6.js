@@ -6817,7 +6817,7 @@
                     reset() {
                       const gain = Math.floor(player.antimatter.log10() - 1)
                       if (player.leap.leapCore > gain) {return}
-                      if (player.challenge.normal.current <= 0) {
+                      if (player.challenge.normal.current > 0) {
                       Modal.message.show("You cannot reset in the Challenge")
                       return
                       }
