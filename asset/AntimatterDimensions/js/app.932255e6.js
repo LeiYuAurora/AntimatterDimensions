@@ -7890,7 +7890,7 @@
   }
 
   resetAmount() {
-    this.amount = v.D0
+    this.amount = new Decimal(this.bought)
   }
   
   get rateOfChange() {
