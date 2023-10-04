@@ -2711,6 +2711,11 @@ br {
   color: black;
 }
 
+.c-leap-dim-description__accent {
+  font-size: 3.5rem;
+  color: black;
+}
+
 .t-metro .c-time-dim-description__accent,
 .t-s8 .c-time-dim-description__accent {
   text-shadow: 0 0 0.1rem rgba(0, 0, 0, 50%), -0.1rem 0.1rem 0.1rem black;
@@ -2730,6 +2735,11 @@ br {
 .t-dark-metro .c-time-dim-description__accent,
 .t-s8 .c-time-dim-description__accent {
   color: #673ab7;
+}
+
+
+.c-leap-dim-description__accent {
+  color: var(--color-leap);
 }
 
 /* #endregion c-time-dim-description__accent */
@@ -9347,6 +9357,16 @@ input.o-automator-block-input {
   border: 0.1rem solid var(--color-leap);
   border-radius: var(--var-border-radius, 0.5rem);
 }
+
+.c-LDbuy-button {
+  display: block;
+  font-family: Typewriter;
+  color: var(--color-text);
+  background: var(--color-text-inverted);
+  border: 0.1rem solid var(--color-leap);
+  border-radius: var(--var-border-radius, 0.5rem);
+}
+
 
 .s-base--metro .c-leapReset-button {
   box-shadow: 0.1rem 0.1rem 0.1rem 0 #9e9e9e;
