@@ -7848,7 +7848,7 @@
               class LeapDimensionState extends Rd {
                 constructor(tier) {
                   super((() => player.dimensions.leap), tier)
-                  const BASE_COSTS = [null, 1, 100, 1e6, 1e20, Number.MAX_VALUE, Number.MAX_VALUE, Number.MAX_VALUE, Number.MAX_VALUE];
+                  const BASE_COSTS = [null, 1, 100, 1e10, 1e30, Number.MAX_VALUE, Number.MAX_VALUE, Number.MAX_VALUE, Number.MAX_VALUE];
                   this._baseCost = BASE_COSTS[tier];
                   const BASE_COST_MULTIPLIERS = [null, 1e6, 1e10, 1e15, 1e22, Number.MAX_VALUE, Number.MAX_VALUE, Number.MAX_VALUE, Number.MAX_VALUE];
                   this._baseCostMultiplier = BASE_COST_MULTIPLIERS[tier]
