@@ -8789,12 +8789,47 @@
             return Math.max(0, Math.floor(player.records.thisReality.maxAM.log10() - 1))
           }
           function concludeSimulationReset() {
+                                player.leap.leapCore = leapCoreGain()
+          player.dilation.nextThreshold = DC.E3;
+  player.dilation.baseTachyonGalaxies = 0;
+  player.dilation.totalTachyonGalaxies = 0;
+  Currency.dilatedTime.reset();
+  player.records.thisInfinity.maxAM = v.D0;
+  player.records.thisEternity.maxAM = v.D0;
+  player.records.thisReality.maxDT = v.D0;
+  player.dilation.lastEP = v.DM1;
+  Currency.antimatter.reset();
+  Enslaved.autoReleaseTick = 0;
+  player.celestials.enslaved.hasSecretStudy = false;
+  player.celestials.laitela.entropy = 0;
+
+  playerInfinityUpgradesOnReset();
+  resetInfinityRuns();
+  resetEternityRuns();
+  InfinityDimensions.fullReset();
+  fullResetTimeDimensions();
+  resetChallengeStuff();
+  AntimatterDimensions.reset();
+  player.records.thisReality.time = 0;
+  player.records.thisReality.realTime = 0;
+  player.records.thisReality.maxReplicanti = v.D0;
+  player.challenge.eternity.requirementBits = 0;
+  player.respec = false;
+  player.eterc8ids = 50;
+  player.eterc8repl = 40;
+  player.reality.lastAutoEC = 0;
+  player.challenge.eternity.current = 0;
+   player.records.thisEternity.time = 0;
+  player.records.thisEternity.realTime = 0;
+  player.records.bestEternity.time = 999999999999;
+  player.records.bestEternity.realTime = 999999999999;
+    Currency.antimatter.reset();
+    
+                      Currency.antimatter.reset();
                       LeapDimensions.resetAmount()
-                      softReset(0, true, true)
-                      player.leap.leapCore = leapCoreGain()
                       player.dimensionBoosts = 0;
                       player.galaxies = 0;
-                      player.records.thisInfinity.maxAMpl = DC.D0;
+                      player.records.thisInfinity.maxAMpl = v.D0;
                       player.replicanti.galaxies = 0;
                       player.records.thisInfinity.time = 0;
   player.records.thisInfinity.lastBuyTime = 0;
