@@ -7962,7 +7962,6 @@
           const pattern = dim.pattern
           if (player.leap.leapPower[player.leap.pattern].lt(dim.cost)) return false;
             player.leap.leapPower[player.leap.pattern] = (player.leap.leapPower[player.leap.pattern].minus(dim.cost))
-            console.log(dim.amount)
             dim.amount = (dim.amount.plus(1));
             dim.bought += 1;
           }
@@ -8803,7 +8802,7 @@
           function ADMultBySLP() { 
             const slp = player.leap.leapPower[1]
           
-            return Decimal.times(slp.add(1).log10(), slp.times(0.4)).div(20).add(1)
+            return Decimal.times(slp.div(500).add(1).log10(), slp.pow(0.3)).div(40).add(1)
           }
           function concludeSimulationReset() {
                                 player.leap.leapCore = leapCoreGain()
