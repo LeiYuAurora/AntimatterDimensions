@@ -8786,13 +8786,13 @@
           //数据
           function gameSpeedByTLP() {
             const tlp = player.leap.leapPower[0]
-            return Decimal.times(tlp.plus(1).log10(), tlp.pow(0.18).add(tlp.pow(0.3).div(40))).div(20).add(1)
+            return Decimal.min(Decimal.times(tlp.plus(1).log10(), tlp.pow(0.18).add(tlp.pow(0.35).div(40))).div(18).add(1), 1e10)
           }
           function leapCoreGain() {
             return Math.max(0, Math.floor(player.records.thisReality.maxAM.log10() - 1))
           }
           function nextLeapCoreAt() {
-            return Decimal.pow(10, player.leap.leapCore + 2)
+            return Decimal.pow(10, Math.max(player.leap.leapCore, leapCoreGain()) + 2)
           }
           function concludeSimulationReset() {
                                 player.leap.leapCore = leapCoreGain()
