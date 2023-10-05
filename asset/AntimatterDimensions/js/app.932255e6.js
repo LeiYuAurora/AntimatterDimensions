@@ -50,6 +50,7 @@
       LeapMilestone: () => LeapMilestone,
       LeapMilestones: () => LeapMilestones,
       LeapDimension: () => _LeapDimension,
+      ADMultBySLP: () => ADMultBySLP,
       LeapDimensions: () => LeapDimensions,
       BuySingleLeapDimension: () => _BuySingleLeapDimension,
       EternityUpgrade: () => _4, FreeTickspeed: () => B3, GALAXY_TYPE: () => Sc, Galaxy: () => Ic, GalaxyGenerator: () => ch, GalaxyGeneratorUpgrade: () => uh, GalaxyGeneratorUpgrades: () => dh, GameCache: () => jo, GameEnd: () => mh, GameIntervals: () => zo, GameKeyboard: () => il, GameOptions: () => cS, GameSaveSerializer: () => mu, GameStorage: () => Eu, GameUI: () => P2, GlyphAlteration: () => Td, GlyphAppearanceHandler: () => o3, GlyphEffect: () => c3, GlyphEffectOrder: () => W2, GlyphEffects: () => Bs, GlyphGenerator: () => w3, GlyphSacrifice: () => Z2, GlyphSacrificeHandler: () => T3, GlyphSelection: () => M4, GlyphTypes: () => qs, Glyphs: () => X2, ImaginaryUpgrade: () => b8, ImaginaryUpgrades: () => v8, InfinityChallenge: () => c4, InfinityChallenges: () => u4, InfinityDimension: () => e5, InfinityDimensions: () => t5, InfinityUpgrade: () => Q5, InfinityUpgradeState: () => z5, Laitela: () => Vd, LineEnum: () => Sn, MachineHandler: () => z8, Modal: () => aS, NG: () => Hu, NewsHandler: () => Q8, NormalChallenge: () => n4, NormalChallenges: () => s4, NormalTimeStudies: () => v5, NormalTimeStudyState: () => E5, Notation: () => Nu, Notations: () => Ou, POWER_DE_PER_ASCENSION: () => Ld, POWER_DM_PER_ASCENSION: () => Od, Pelle: () => Jd, PelleRifts: () => lh, PelleStrikes: () => nh, PelleUpgrade: () => ih, PelleUpgradeState: () => th, PerformanceStats: () => $o, Perk: () => w8, PerkShopUpgrade: () => Qu, Perks: () => T8, Player: () => Lo, PlayerProgress: () => re, Quote: () => qu, Quotes: () => ju, Ra: () => wd, RealityUpgrade: () => p8, RealityUpgrades: () => y8, RebuyablePelleUpgradeState: () => eh, Replicanti: () => c8, ReplicantiGrowth: () => Z4, ReplicantiUpgrade: () => l8, Sacrifice: () => M5, ScriptTemplate: () => h9, SecretAchievement: () => F2, SecretAchievements: () => $2, ShopPurchase: () => i9, ShopPurchaseData: () => e9, Singularity: () => Xd, SingularityMilestone: () => Wd, SingularityMilestones: () => jd, Speedrun: () => ld, SpeedrunMilestones: () => ud, TUTORIAL_STATE: () => Lu, Tab: () => o9, TabNotification: () => d9, Tabs: () => l9, Teresa: () => zu, TeresaUnlocks: () => Zu, Tesseracts: () => od, Theme: () => oS, Themes: () => lS, Tickspeed: () => U3, Time: () => I3, TimeDimension: () => d5, TimeDimensions: () => h5, TimeStudy: () => w5, TimeStudyConnection: () => A5, TimeStudyState: () => g5, TimeStudyTree: () => b5, TimeTheoremPurchaseType: () => u8, TimeTheorems: () => d8, Tutorial: () => $u, UIID: () => G2, V: () => fd, VRunUnlock: () => md, VRunUnlocks: () => pd, VUnlocks: () => yd, animateAndDilate: () => A8, animateAndEternity: () => y4, animateAndUndilate: () => C8, antimatterDimensionCommonMultiplier: () => N3, applyEU1: () => b4, applyEU2: () => v4, applyRUPG10: () => j4, autoAdjustGlyphWeights: () => A3, autoReality: () => $4, beginProcessReality: () => V4, bigCrunchAnimation: () => U5, bigCrunchReset: () => L5, bigCrunchResetRequest: () => O5, bigCrunchResetValues: () => q5, blockifyTextAutomator: () => fn, buyAsManyAsYouCanBuy: () => V3, buyDilationUpgrade: () => I8, buyManyDimension: () => q3, buyMaxDimension: () => j3, buyMaxTickSpeed: () => P3, buyMaxTimeDimension: () => r5, buyOneDimension: () => H3, buySingleTimeDimension: () => i5, buyStudiesUntil: () => y5, buyTickSpeed: () => M3, calculateGlyph: () => J2, checkPerkValidity: () => k8, clearCelestialRuns: () => z4, countValuesFromBitmask: () => b3, dev: () => X8, dilatedValueOf: () => L8, disChargeAll: () => K5, effectiveBaseGalaxies: () => R3, eternity: () => p4, eternityAnimation: () => h4, eternityResetRequest: () => m4, findGlyphTypeEffects: () => Ns, finishProcessReality: () => Y4, forbiddenConstantPatterns: () => Ja, fullResetTimeDimensions: () => n5, gainedEternities: () => w4, generatedTypes: () => Y2, getActiveGlyphEffects: () => v3, getAdjustedGlyphEffect: () => d3, getAdjustedGlyphEffectUncached: () => u3, getAdjustedGlyphLevel: () => t3, getBaseTP: () => G8, getDilationGainPerSecond: () => x8, getDilationTimeEstimate: () => O8, getDimensionFinalMultiplierUncached: () => O3, getGlyphEffectValues: () => m3, getGlyphEffectValuesFromBitmask: () => f3, getGlyphEffectsFromBitmask: () => Ls, getGlyphIDsFromBitmask: () => Fs, getGlyphLevelInputs: () => _3, getRarity: () => e3, getRealityProps: () => F4, getReplicantiInterval: () => i8, getSecondaryGlyphEffect: () => h3, getSingleGlyphEffectFromBitmask: () => g3, getTP: () => U8, getTachyonGain: () => B8, getTachyonGalaxyMult: () => R8, getTachyonReq: () => N8, getTickSpeedMultiplier: () => x3, guardFromNaNValues: () => Fo, hasCompilationErrors: () => yn, infinityDimensionCommonMultiplier: () => Z3, initializeChallengeCompletions: () => f4, initializeResourcesAfterEternity: () => g4, isDevEnvironment: () => K8, isInCelestialReality: () => X4, isLocalEnvironment: () => Z8, isRealityAvailable: () => P4, isSecretImport: () => hS, makeGlyphEffectBitmask: () => Os, manualBigCrunchResetRequest: () => N5, manualRequestDimensionBoost: () => I5, manualRequestGalaxyReset: () => xc, maxAll: () => W3, maxAllTimeDimensions: () => o5, orderedEffectList: () => V2, preProductionGenerateIP: () => W5, processManualReality: () => N4, rarityToStrength: () => j2, realityGlyphEffectLevelThresholds: () => Us, recalculateAllGlyphs: () => Q2, replicantiCap: () => n8, replicantiGalaxy: () => J4, replicantiGalaxyRequest: () => e8, replicantiLoop: () => s8, replicantiMult: () => r8, requestDimensionBoost: () => R5, requestGalaxyReset: () => Mc, requestManualReality: () => U4, resetTickspeed: () => G3, resetTimeDimensions: () => a5, respecGlyphs: () => i3, respecTimeStudies: () => f5, rewardTP: () => P8, runRealityAnimation: () => O4, sacrificeBtnClick: () => G5, sacrificeReset: () => P5, secondSoftReset: () => Y5, separateEffectKey: () => y3, shop: () => J8, shortcuts: () => uc, simulatedRealityCount: () => G4, skipResetsIfPossible: () => D5, softReset: () => S5, startDilatedEternity: () => S8, startDilatedEternityRequest: () => _8, startEternityChallenge: () => S4, startManualReality: () => B4, staticGlyphWeights: () => S3, strengthToRarity: () => z2, tachyonGainMultiplier: () => M8, timeDimensionCommonMultiplier: () => l5, toggleAllInfDims: () => Q3, toggleAllTimeDims: () => s5, totalIPMult: () => X5, totalReplicantiSpeedMult: () => a8, tryCompleteInfinityChallenges: () => r4, tryImportSecret: () => mS, tryUnlockTimeDimensions: () => m5, ui: () => U2, updateNormalAndInfinityChallenges: () => i4, updateTimeDimensionCosts: () => c5, validateLine: () => gn }); var u = {};
@@ -7166,7 +7167,7 @@
           LEAP_V0 = function() { var e = this,
                 t = e.$createElement,
                 i = e._self._c || t; return i("div", { staticClass: "l-old-ui-antimatter-dim-tab" }, [
-                i("div", [e._v("You have "), i("span", { staticClass: "c-leap-dim-description__accent" }, [e._v(e._s(e.format(e.currency, 2)))]), e._v(" temporal Leap Power, boosting " + e._s(e.effect) + "  by " + e._s(e.multiplier))]),
+                i("div", [e._v("You have "), i("span", { staticClass: "c-leap-dim-description__accent" }, [e._v(e._s(e.format(e.currency, 2)))]), e._v(" " + e._s(e.pattern) + " Leap Power, boosting " + e._s(e.effect) + "  by " + e._s(e.multiplier))]),
                 //按钮
                 i("PrimaryButton", { staticClass: "o-primary-btn--subtab-option", }, [e._v(" Max all ")]), i("div", { staticClass: "l-dimensions-container" }, [e._l(8, (function(e) { return i("ClassicLeapDimensionRow", { key: e, attrs: { tier: e } }) }))], 2)], 1) },
           
@@ -7174,12 +7175,17 @@
           Leap_F0 = { name: "ClassicLeapDimensionsTab", components: {PrimaryButton: Es, ClassicLeapDimensionRow}, computed: {   
           }, methods: {
             update() {
-              this.pattern  = ["temporal", "spatial", "energetic"][this.pattern]
+              this.pattern  = ["temporal", "spatial", "energetic"][player.leap.pattern]
               this.currency = player.leap.leapPower[player.leap.pattern]
-              this.effect = ["game speed", "dimensions", "points"][player.leap.pattern]
+              this.effect = ["game speed", "Antimatter Dimensions", "points"][player.leap.pattern]
               if (player.leap.pattern === 0) {
                 const gameSpeed = getGameSpeedupFactor()
                 this.multiplier = formatX(gameSpeedByTLP(), 2, 3)
+                if (gameSpeed >= 1e10) {
+                  this.multiplier += " (capped)"
+                }
+              } else if (player.leap.pattern === 1) {
+                this.multiplier = formatX(ADMultBySLP(), 2, 3)
               }
             }
           } ,
@@ -8793,6 +8799,11 @@
           }
           function nextLeapCoreAt() {
             return Decimal.pow(10, Math.max(player.leap.leapCore, leapCoreGain()) + 2)
+          }
+          function ADMultBySLP() { 
+            const slp = player.leap.leapPower[1]
+          
+            return Decimal.times(slp.add(1).log10(), slp.times(0.4)).div(20).add(1)
           }
           function concludeSimulationReset() {
                                 player.leap.leapCore = leapCoreGain()
