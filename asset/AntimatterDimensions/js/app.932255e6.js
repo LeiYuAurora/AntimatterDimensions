@@ -56,6 +56,7 @@
       i.r(u), i.d(u, { GAME_SPEED_EFFECT: () => G9, addEternityTime: () => _9, addInfinityTime: () => k9, addRealityTime: () => x9, breakInfinity: () => y9, browserCheck: () => Q9, gainedEternityPoints: () => b9, gainedGlyphLevel: () => E9, gainedInfinities: () => M9, gainedInfinityPoints: () => f9, gameLoop: () => O9, getEternitiedMilestoneReward: () => D9, getGameSpeedupFactor: () => U9, getGameSpeedupForDisplay: () => B9,
       gameSpeedByTLP: () => gameSpeedByTLP,
       leapCoreGain: () => leapCoreGain,
+      nextLeapCoreAt: () => nextLeapCoreAt,
       concludeSimulationReset: () => concludeSimulationReset,
       getInfinitiedMilestoneReward: () => C9, getOfflineEPGain: () => R9, getTTPerSecond: () => j9, init: () => J9, playerInfinityUpgradesOnReset: () => p9, ratePerMinute: () => T9, realTimeMechanics: () => N9, requiredIPForEP: () => v9, resetChallengeStuff: () => w9, resetEternityRuns: () => S9, resetInfinityRuns: () => A9, setHoldingR: () => Z9, setShiftKey: () => K9, simulateTime: () => X9, updateRefresh: () => P9 });
       i(8674), i(7727), i(8010); var d = i(4631),
@@ -6851,7 +6852,7 @@
                 this.formatPercentage = formatPercents(Math.min(1, this.currentLC / this.requirement), 3)
                 if (config.formatEffect instanceof Function) {
                   const effect = config.effect()
-                  this.formatEffect = "currently: " + config.formatEffect(effect)
+                  this.formatEffect = "Currently: " + config.formatEffect(effect)
                 }
               }
             }
@@ -6898,7 +6899,7 @@
           //leap重置
           const LEAP_A0 = function() { var e = this,
                 t = e.$createElement,
-                i = e._self._c || t; return i("button", { class: e.buttonClassObject, on: { click: e.reset } }, [e.isHeader ? i("span", [e._v(""), i("br")]) : e._e(), i("span", { staticClass: "c-LC-gain-display" }, [e._v("Conclude this Simulation for "), i("span", { staticClass: "c-LC-gain" }, [e._v(e._s(e.remnants))]), e._v(" Leap Cores ")]), i("br"), e._v(" Leap Cores "), i("span", { staticClass: "c-LC-gain" }, [e._v(e._s(e.format(e.start, 2)))]), e._v(" ➜ "), i("span", { staticClass: "c-LC-gain" }, [e._v(e._s(e.format(e.end, 2)))]), e._v(" ")]) }
+                i = e._self._c || t; return i("button", { class: e.buttonClassObject, on: { click: e.reset } }, [e.isHeader ? i("span", [e._v(""), i("br")]) : e._e(), i("span", { staticClass: "c-LC-gain-display" }, [e._v("Conclude this Simulation for "), i("span", { staticClass: "c-LC-gain" }, [e._v(e._s(e.remnants))]), e._v(" Leap Cores ")]), i("br"), e._v(" Leap Cores "), i("span", { staticClass: "c-LC-gain" }, [e._v(e._s(e.format(e.start, 2)))]), e._v(" ➜ "), i("span", { staticClass: "c-LC-gain" }, [e._v(e._s(e.format(e.end, 2)))]), e._v(" (next at " + e._s(e.next) + " AM) ")]) }
                 
                 const LEAP_B0 = {
                   name: "LeapResetTab",
@@ -6907,7 +6908,8 @@
                     start: 0,
                     end: 0,
                     isHeader: false,
-                    canReset: false
+                    canReset: false,
+                    next: ""
                   }},
                   methods: {
                     update() {
@@ -6920,6 +6922,7 @@
                         this.end = this.start
                         this.canReset = false
                       }
+                      this.next = format(nextLeapCoreAt(), 2, 1)
                     },
                     reset() {
                       const gain = leapCoreGain()
@@ -8787,6 +8790,9 @@
           }
           function leapCoreGain() {
             return Math.max(0, Math.floor(player.records.thisReality.maxAM.log10() - 1))
+          }
+          function nextLeapCoreAt() {
+            return Decimal.pow(10, player.leap.leapCore + 2)
           }
           function concludeSimulationReset() {
                                 player.leap.leapCore = leapCoreGain()
