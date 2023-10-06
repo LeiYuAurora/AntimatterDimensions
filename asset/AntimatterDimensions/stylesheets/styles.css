@@ -83,7 +83,7 @@ html {
   --color-reality-dark: #0a790c;
   --color-celestials: #5151ec;
   
-
+  --color-milestone-complete: #F9C834;
   --color-leap: #18b3ec;
   --color-prestige--accent: white;
 
@@ -9321,7 +9321,7 @@ input.o-automator-block-input {
   color: var(--color-text);
 }
 
-.l-leap-panel-container {
+.l-pelle-panel-container {
   width: 98rem;
   border: var(--var-border-width, 0.2rem) solid var(--color-pelle--base);
   border-radius: var(--var-border-radius, 0.5rem);
@@ -9411,7 +9411,7 @@ input.o-automator-block-input {
   position: relative;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(45deg, #ffffff, #e6e6e6);
+  background: linear-gradient(45deg, #e6e6e6, #dadada);
   border: var(--var-border-width, 0.2rem) solid var(--color-leap);
   border-radius: var(--var-border-radius, 0.5rem);
     transition: box-shadow 0.5s;
@@ -9420,8 +9420,6 @@ input.o-automator-block-input {
     
 }
 
-.leap-milestone-container .leap-milestone-bar {
- }
  .leap-milestone-text {
   z-index: 2;
   font-size: 1.2rem;
@@ -9480,4 +9478,14 @@ input.o-automator-block-input {
     width: 0;
     left: 100%;
   }
+}
+
+.leap-milestone-complete {
+  background-color: var(--color-leap) !important;
+  opacity: 0.6;
+}
+
+.leap-milestone-complete-border {
+  border-color: #597DF5;
+  box-shadow: inset 0 0 1.5rem #597DF5;
 }
